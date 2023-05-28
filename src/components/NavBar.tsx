@@ -167,10 +167,12 @@ const MenuContainer = styled.div<{ open: boolean }>`
   top: 0;
   right: 0;
   height: 100vh;
-  width: 60vw;
+  width: var(--mobile-menu-width);
   padding: 100px 0px;
   transition: all 0.3s;
-  transform: translateX(${(props) => (props.open ? 0 : "60vw")});
+  transform: translateX(
+    ${(props) => (props.open ? 0 : "var(--mobile-menu-width)")}
+  );
   z-index: 2;
 
   @media screen and (min-width: 768px) {

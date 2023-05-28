@@ -19,6 +19,7 @@ const Variables = css`
     --card-width: 300px;
     --carousel-width: 300px;
     --carousel-height: 900px;
+    --mobile-menu-width: max(60vw, 300px);
     --font-sans: "Inter", sans-serif;
     --font-serif: "Roboto Slab", "serif";
 

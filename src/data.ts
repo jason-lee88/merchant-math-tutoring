@@ -1,8 +1,8 @@
-import EricLai from "./assets/eric-lai.jpg";
-import MadelineBraun from "./assets/madeline-braun.png";
-import SophiaMartino from "./assets/sophia-martino.jpg";
-import NolanJetter from "./assets/nolan-jetter.jpg";
-import JoshuaHall from "./assets/joshua-hall.jpg";
+import EricLai from "./assets/tutors/eric-lai.jpg";
+import MadelineBraun from "./assets/tutors/madeline-braun.png";
+import SophiaMartino from "./assets/tutors/sophia-martino.jpg";
+import NolanJetter from "./assets/tutors/nolan-jetter.jpg";
+import JoshuaHall from "./assets/tutors/joshua-hall.jpg";
 
 interface Data {
   tabs: {

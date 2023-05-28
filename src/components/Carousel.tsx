@@ -7,8 +7,8 @@ import {
   MutableRefObject,
 } from "react";
 import styled from "styled-components";
-import LeftArrow from "../assets/left-arrow.svg";
-import RightArrow from "../assets/right-arrow.svg";
+import LeftArrow from "../assets/svg/left-arrow.svg";
+import RightArrow from "../assets/svg/right-arrow.svg";
 
 const CarouselContainer = styled.div`
   display: flex;
@@ -130,6 +130,8 @@ const Carousel = ({ children }: CarouselProps) => {
   };
 
   useEffect(() => {
+    onResize();
+
     window.addEventListener("resize", onResize);
     return () => window.removeEventListener("resize", onResize);
   }, []);
@@ -142,7 +144,7 @@ const Carousel = ({ children }: CarouselProps) => {
         </CarouselInner>
       </CarouselWindow>
       <Indicators>
-        {Children.map(children, (child, index) => (
+        {Children.map(children, (_, index) => (
           <button onClick={() => updateIndex(index)}>
             <Indicator className={index === activeIndex ? "active" : ""} />
           </button>

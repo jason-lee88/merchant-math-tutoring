@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import styled from "styled-components";
 import Logo from "../assets/logo.png";
-import Hamburger from "../assets/hamburger-menu.svg";
-import Close from "../assets/close.svg";
+import Hamburger from "../assets/svg/hamburger-menu.svg";
+import Close from "../assets/svg/close.svg";
 import Data from "../data";
 
 const StyledNav = styled.nav<{ open: boolean }>`
@@ -116,7 +116,7 @@ const StyledNav = styled.nav<{ open: boolean }>`
 
     @media screen and (min-width: 768px) {
       &.scroll {
-        margin-top: 16px;
+        margin-top: 8px;
       }
     }
   }

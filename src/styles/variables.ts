@@ -5,6 +5,8 @@ const Variables = css`
     // COLORS
     --white: #ffffff;
     --off-white: #eeeeee;
+    --light-gray: #cccccc;
+    --dark-gray: #999999;
     --black: #000000;
     --light-orange: #fcaf9c;
     --orange: #ff6b47;
@@ -14,6 +16,9 @@ const Variables = css`
     // OTHERS
     --navbar-height: 120px;
     --navbar-expanded-height: 240px;
+    --card-width: 300px;
+    --carousel-height: 500px;
+    --carousel-width: 900px;
     --font-sans: "Inter", sans-serif;
     --font-serif: "Roboto Slab", "serif";
   }

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Data from "../data";
 import SameerMerchant from "../assets/sameer-merchant.jpg";
+import AboutSection from "../components/AboutSection";
 
 const StyledSection = styled.section`
   p {
@@ -11,7 +12,7 @@ const StyledSection = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
+    width: 100%;
   }
 
   #about-intro {
@@ -29,14 +30,10 @@ const StyledSection = styled.section`
     -webkit-user-drag: none;
   }
 
-  #about-text {
-    display: flex;
-    flex-direction: column;
-  }
-
   .about-section {
     display: flex;
     flex-direction: column;
+    margin: 20px 0px;
   }
 `;
 
@@ -46,22 +43,19 @@ const About = () => (
     <div id="about-content">
       <div id="about-intro">
         <img id="sameer" src={SameerMerchant} />
-        <div className="about-section">
-          <h2>{Data.about[0].heading}</h2>
-          <p>{Data.about[0].body}</p>
-        </div>
+        <AboutSection
+          heading={Data.about[0].heading}
+          body={Data.about[0].body}
+        />
       </div>
       <hr />
-      <div id="about-text">
-        {Data.about.slice(1, Data.about.length).map((aboutSection) => (
-          <div className="about-section">
-            <h2>{aboutSection.heading}</h2>
-            {aboutSection.body.map((paragraph) => (
-              <p>{paragraph}</p>
-            ))}
-          </div>
-        ))}
-      </div>
+      {Data.about.slice(1, Data.about.length).map((aboutSection) => (
+        <AboutSection
+          key={aboutSection.heading}
+          heading={aboutSection.heading}
+          body={aboutSection.body}
+        />
+      ))}
     </div>
   </StyledSection>
 );

@@ -14,6 +14,7 @@ const GlobalStyle = createGlobalStyle`
     scrollbar-width: thin;
     &::-webkit-scrollbar {
       width: 10px;
+      height: 10px;
     }
     &::-webkit-scrollbar-track {
       background: var(--off-white);

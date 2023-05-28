@@ -12,6 +12,8 @@ const StyledNav = styled.nav`
   width: 100%;
   box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.2);
   transition: all 0.3s;
+  background-color: var(--white);
+  z-index: 10;
 
   button {
     border: none;
@@ -114,17 +116,15 @@ const NavBar = () => {
         }
       }
 
-      Object.keys(Data.tabs).forEach((link) => {
-        const section = document.querySelector(`#${link}`);
-        if (section) {
-          const navLink = document.querySelector(`#navlink-${link}`);
+      Data.tabs.forEach((tab) => {
+        const section = document.querySelector(`#${tab.tabLink}`);
+        const navLink = document.querySelector(`#navlink-${tab.tabLink}`);
+        if (section && navLink) {
           const dimensions = section.getBoundingClientRect();
-          if (navLink) {
-            if (dimensions.top <= 1 && dimensions.bottom > 1) {
-              navLink.className = "active";
-            } else {
-              navLink.className = "";
-            }
+          if (dimensions.top <= 1 && dimensions.bottom > 1) {
+            navLink.className = "navlink active";
+          } else {
+            navLink.className = "navlink";
           }
         }
       });
@@ -142,14 +142,14 @@ const NavBar = () => {
       <span id="mmt-name">Merchant Math Tutoring</span>
       <div id="navlinks">
         <ul>
-          {Object.keys(Data.tabs).map((tabPath) => (
-            <li key={tabPath}>
+          {Data.tabs.map((tab) => (
+            <li key={tab.tabLink}>
               <a
                 className="navlink"
-                id={`navlink-${tabPath}`}
-                href={`/#${tabPath}`}
+                id={`navlink-${tab.tabLink}`}
+                href={`/#${tab.tabLink}`}
               >
-                {Data.tabs[tabPath]}
+                {tab.tabName}
               </a>
             </li>
           ))}

@@ -3,6 +3,8 @@ import NavBar from "./components/NavBar";
 import Hero from "./sections/Hero";
 import About from "./sections/About";
 import Pricing from "./sections/Pricing";
+import Testimonials from "./sections/Testimonials";
+import StudyGuides from "./sections/StudyGuides";
 
 const App = () => (
   <>
@@ -15,6 +17,8 @@ const App = () => (
         <Hero />
         <About />
         <Pricing />
+        <Testimonials />
+        <StudyGuides />
       </main>
     </div>
   </>

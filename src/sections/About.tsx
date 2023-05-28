@@ -29,12 +29,17 @@ const StyledSection = styled.section`
 
   #sameer {
     border-radius: 10px;
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     margin-right: 20px;
     margin-bottom: 20px;
     user-select: none;
     -webkit-user-drag: none;
+
+    @media screen and (min-width: 768px) {
+      height: 400px;
+      width: 400px;
+    }
   }
 `;
 

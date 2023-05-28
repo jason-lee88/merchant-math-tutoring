@@ -36,21 +36,32 @@ const TutorImage = styled.div<{
   imagePath: string;
   imageX: number;
   imageY: number;
+  imageXMobile: number;
+  imageYMobile: number;
   imageScaling: number;
+  imageScalingMobile: number;
 }>`
   display: flex;
   background-image: ${(props) => `url(${props.imagePath})`};
-  background-position-x: ${(props) => `-${props.imageX}px`};
-  background-position-y: ${(props) => `-${props.imageY}px`};
-  background-size: ${(props) => `${props.imageScaling}px`};
+  background-position-x: ${(props) => `-${props.imageXMobile}px`};
+  background-position-y: ${(props) => `-${props.imageYMobile}px`};
+  background-size: ${(props) => `${props.imageScalingMobile}px`};
   background-repeat: no-repeat;
   border-radius: 10px;
-  min-height: 500px;
-  min-width: 500px;
-  margin-right: 20px;
+  height: 300px;
+  width: 300px;
   margin-bottom: 20px;
   user-select: none;
   -webkit-user-drag: none;
+
+  @media screen and (min-width: 768px) {
+    background-position-x: ${(props) => `-${props.imageX}px`};
+    background-position-y: ${(props) => `-${props.imageY}px`};
+    background-size: ${(props) => `${props.imageScaling}px`};
+    min-height: 500px;
+    min-width: 500px;
+    margin-right: 20px;
+  }
 `;
 
 const Tutors = () => (
@@ -64,7 +75,10 @@ const Tutors = () => (
             imagePath={tutor.imagePath}
             imageX={tutor.imagePosition[0]}
             imageY={tutor.imagePosition[1]}
+            imageXMobile={tutor.imagePositionMobile[0]}
+            imageYMobile={tutor.imagePositionMobile[1]}
             imageScaling={tutor.imageScaling}
+            imageScalingMobile={tutor.imageScalingMobile}
           />
           <AboutSection heading={tutor.name} body={tutor.bio} />
         </div>

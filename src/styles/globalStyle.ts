@@ -67,8 +67,13 @@ const GlobalStyle = createGlobalStyle`
     margin: 0px auto;
     min-height: 100vh;
     padding-top: calc(30px + var(--navbar-height));
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 3%;
+    padding-right: 3%;
+
+    @media screen and (min-width: 768) {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
   }
 
   h1 {

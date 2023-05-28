@@ -12,10 +12,15 @@ const StyledSection = styled.section`
 
   #pricing-cards {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
+
+    @media screen and (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
 
     @media screen and (min-width: 1600px) {
       grid-template-columns: repeat(4, 1fr);
@@ -29,14 +34,14 @@ const StyledSection = styled.section`
     font-size: 40px;
   }
 
-  p {
-    font-size: 16px;
-  }
-
   h2.info {
     width: 90%;
     margin-top: 80px;
-    font-size: 32px;
+    font-size: 24px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 32px;
+    }
   }
 
   a {

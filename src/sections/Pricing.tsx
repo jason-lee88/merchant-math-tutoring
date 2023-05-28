@@ -68,10 +68,10 @@ const Pricing = () => (
       </div>
       <p>NOTE: Group rates are for each student.</p>
       <h2 className="info">
-        We have tutors who can tutor a wide variety of STEM topics, including
-        but not limited to Mathematics, Physics, and Mechanics. View the{" "}
-        <a href="#tutors">tutors</a> section of this page to find a tutor that's
-        right for you.
+        We have tutors who can teach a wide variety of STEM topics, including
+        but not limited to topics in Mathematics, Physics, and Mechanics. View
+        the <a href="#tutors">tutors</a> section of this website to find a tutor
+        that's right for you.
       </h2>
       <h2 className="info">
         If you are interested in scheduling a tutoring session (online or in

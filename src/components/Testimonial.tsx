@@ -27,8 +27,8 @@ const TestimonialContainer = styled.div`
     font-size: 128px;
     line-height: 0.4;
     color: var(--orange);
-    user-select: none;
   }
+
   p {
     font-size: 14px;
   }

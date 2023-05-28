@@ -1,4 +1,4 @@
-import { ReactElement, Children, cloneElement, useState } from "react";
+import { ReactElement, Children, useState } from "react";
 import styled from "styled-components";
 import LeftArrow from "../assets/left-arrow.svg";
 import RightArrow from "../assets/right-arrow.svg";
@@ -21,6 +21,7 @@ const CarouselWindow = styled.div`
   height: var(--carousel-height);
   border: 2px solid var(--light-gray);
   overflow: hidden;
+  z-index: -1;
 `;
 
 const CarouselInner = styled.div<{ offset: number }>`
@@ -51,6 +52,8 @@ const Controls = styled.div`
   }
 
   img {
+    user-select: none;
+    -webkit-user-drag: none;
     height: 32px;
   }
 `;
@@ -62,7 +65,7 @@ const Indicators = styled.div`
   button {
     background-color: transparent;
     border: none;
-    padding: 2px 2px;
+    padding: 0px 0px;
     margin: 0px 2px;
     &:hover {
       cursor: pointer;
@@ -80,6 +83,15 @@ const Indicator = styled.div`
   transition: all 0.3s;
   &.active {
     background-color: var(--orange);
+  }
+  &:hover {
+    transform: scale(1.3);
+    &:not(.active) {
+      background-color: var(--light-orange);
+    }
+  }
+  &:not:hover {
+    transform: scale(1);
   }
 `;
 

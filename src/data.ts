@@ -1,3 +1,9 @@
+import EricLai from "./assets/eric-lai.jpg";
+import MadelineBraun from "./assets/madeline-braun.png";
+import SophiaMartino from "./assets/sophia-martino.jpg";
+import NolanJetter from "./assets/nolan-jetter.jpg";
+import JoshuaHall from "./assets/joshua-hall.jpg";
+
 interface Data {
   tabs: {
     tabName: string;
@@ -16,6 +22,16 @@ interface Data {
     subheading?: string;
     body: string;
   }[];
+  tutors: {
+    name: string;
+    imagePath: string;
+    imagePosition: [number, number];
+    imageScaling: number;
+    bio: string[];
+  }[];
+  subjects: {
+    [key: string]: string[];
+  };
 }
 
 const Data: Data = {
@@ -133,6 +149,66 @@ const Data: Data = {
       body: "Knew the course material very well and all of the best tips, could not recommend more. The tutoring improved my test taking ability and grade drastically.",
     },
   ],
+  tutors: [
+    {
+      name: "Eric Lai",
+      imagePath: EricLai,
+      imagePosition: [0, 150],
+      imageScaling: 500,
+      bio: [
+        "I’m Eric Lai, currently a senior pursuing a B.S. in Chemical Engineering at Lehigh University. Some information about me: I am the president of the Lehigh University eSports club, I have two black belts and I’m a big foodie! I believe there is nothing more frustrating in academics than a professor that knows practically everything in his discipline and can’t relay even a fraction of that knowledge to his/her students. I can’t recall how many times I skipped an entire semester’s worth of classes because I found it more beneficial to learn through the textbook than through lecture-based instruction. I am interested in tutoring because I believe that your time is valuable and shouldn’t be wasted through inefficient means of learning. Learning the course material is something you should expect from any tutor, but I also want to help you develop strong study habits that will guide you to prolonged success in college.",
+        "Eric tutors chemistry, calculus 1, material balances, fluid mechanics, thermodynamics, methods, pchem, reactor design, and biology.",
+      ],
+    },
+    {
+      name: "Madeline Braun",
+      imagePath: MadelineBraun,
+      imagePosition: [155, 300],
+      imageScaling: 800,
+      bio: [
+        "My name is Madeline Braun and I am a third year Mechanical Engineering student at Lehigh! As a new tutor at Merchant, I look forward to forming connections with other students who are working to learn the course content as I once was. Aside from being a student, I am an RA for sophomore housing and work at the Goose deli! I enjoy listening to music and watching Queen’s Gambit. Recognizing that some courses at Lehigh require extra attention, I am excited to be a source of help for others in their learning process.",
+        "Madeline tutors calculus 1, physics 1, statics, dynamics, and strength of materials.",
+      ],
+    },
+    {
+      name: "Sophia Martino",
+      imagePath: SophiaMartino,
+      imagePosition: [0, 300],
+      imageScaling: 800,
+      bio: [
+        "Hi! I am Sophia Martino and I am studying computer engineering with a minor in business and a minor in data science. I also participate in acapella on campus; I am the music director of the Lehigh Echoes. I grew up in Pennsylvania outside of Philly and my family is from Paraguay! Lastly, I enjoy following Formula 1 and playing chess if I’ve got the time.",
+        "Sophia tutors calculus and electrical engineering subjects that include but aren't limited to circuits, signals and systems, and microelectronics.",
+      ],
+    },
+    {
+      name: "Nolan Jetter",
+      imagePath: NolanJetter,
+      imagePosition: [170, 0],
+      imageScaling: 800,
+      bio: [
+        "I’m a junior here at lehigh doing a dual degree in mechanical engineering and biology. I got into engineering when I was young—I liked that I could play with numbers and objects and make them do what I wanted for me. I have only grown to enjoy this more as I have gotten older. I like to do stuff outside of academics as well - I play on the men’s soccer team here at Lehigh and enjoy spending time outside (biking, surfing, and skiing), reading, playing piano, and playing chess. Tutoring is really attractive to me because I believe that the surest sign of deep knowledge in a field is the ability to explain concepts as simply and intuitively as possible. I think that it’s a great opportunity to pass on my knowledge in clear, concise terms and sharpen my skills as a byproduct",
+        "Nolan tutors statics, dynamics, strength of materials, thermodynamics, and other mechanical engineering subjects.",
+      ],
+    },
+    {
+      name: "Joshua Hall",
+      imagePath: JoshuaHall,
+      imagePosition: [40, 20],
+      imageScaling: 600,
+      bio: [
+        "My name is Josh Hall, and I'm a first year undergraduate student at Lehigh. I'm duel majoring in CS and Mathematics, and I've also been a musician for 10 years! I've found that professors sometimes have a habit of skipping steps they deem 'irrelevant' or 'easy', and sometimes I get lost with the omitted details. As a tutor, my main method is to cover these intermediate steps, or study the more niche problems in a subject. I also try to give helpful tips and shortcuts to problems. I've always enjoyed helping my peers in their classes with anything they have been struggling to understand. I love tutoring because I get invested in those I'm teaching, and I love to see them succeed!",
+        "Joshua tutors calculus 1, calculus 2, and calculus 3.",
+      ],
+    },
+  ],
+  subjects: {
+    CHEM: ["030"],
+    MATH: ["051", "081", "021", "022", "023", "205"],
+    PHY: ["011"],
+    CHE: ["031", "044", "201", "210", "211", "212"],
+    MECH: ["003", "012", "102"],
+    ECE: ["081/083", "108", "123"],
+  },
 };
 
 export default Data;

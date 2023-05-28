@@ -13,7 +13,6 @@ const StyledNav = styled.nav`
   box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.2);
   transition: all 0.3s;
   background-color: var(--white);
-  z-index: 10;
 
   button {
     border: none;

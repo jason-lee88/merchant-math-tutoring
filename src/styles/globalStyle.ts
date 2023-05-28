@@ -52,7 +52,6 @@ const GlobalStyle = createGlobalStyle`
     justify-content: center;
     align-items: center;
     margin-top: 100px;
-    padding: 20px;
   }
 
   #layout {
@@ -84,7 +83,7 @@ const GlobalStyle = createGlobalStyle`
   h2, h3, h4, h5, h6 {
     margin: 0;
     color: var(--black);
-    line-height: 1.1;
+    line-height: 1.4;
   }
 
   hr {

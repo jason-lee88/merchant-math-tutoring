@@ -37,7 +37,7 @@ const StyledSection = styled.section`
   h2.info {
     width: 90%;
     margin-top: 80px;
-    font-size: 24px;
+    font-size: 18px;
 
     @media screen and (min-width: 768px) {
       font-size: 32px;

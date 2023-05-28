@@ -17,8 +17,8 @@ const Variables = css`
     --navbar-height: 120px;
     --navbar-expanded-height: 240px;
     --card-width: 300px;
-    --carousel-width: 300px;
-    --carousel-height: 1000px;
+    --carousel-width: 500px;
+    --carousel-height: 600px;
     --font-sans: "Inter", sans-serif;
     --font-serif: "Roboto Slab", "serif";
 

@@ -13,8 +13,12 @@ const GlobalStyle = createGlobalStyle`
     scrollbar-color: var(--orange);
     scrollbar-width: thin;
     &::-webkit-scrollbar {
-      width: 10px;
-      height: 10px;
+      width: 5px;
+      height: 5px;
+      @media screen and (min-width: 768px) {
+        width: 10px;
+        height: 10px;
+      }
     }
     &::-webkit-scrollbar-track {
       background: var(--off-white);

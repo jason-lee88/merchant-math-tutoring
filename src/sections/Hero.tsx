@@ -33,26 +33,38 @@ const StyledSection = styled.section`
 
   h1 {
     font-family: var(--font-serif);
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 300;
     margin-bottom: 20px;
     text-transform: uppercase;
     color: white;
+
+    @media screen and (min-width: 1000px) {
+      font-size: 20px;
+    }
   }
 
   h2 {
     color: white;
-    font-size: 60px;
+    font-size: 24px;
     font-weight: 600;
     margin-bottom: 80px;
+    @media screen and (min-width: 1000px) {
+      font-size: 60px;
+    }
   }
 
   h3 {
     font-family: var(--font-serif);
+    font-size: 18px;
     font-weight: 300;
     margin-bottom: 80px;
     text-transform: uppercase;
     color: white;
+
+    @media screen and (min-width: 1000px) {
+      font-size: 22px;
+    }
   }
 
   a {

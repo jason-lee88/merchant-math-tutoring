@@ -26,9 +26,13 @@ const CarouselWindow = styled.div`
   align-items: center;
   width: var(--carousel-width);
   height: var(--carousel-height);
-  border: 2px solid var(--light-gray);
+  border: none;
   overflow: hidden;
   z-index: -1;
+
+  @media screen and (min-width: 768px) {
+    border: 2px solid var(--light-gray);
+  }
 `;
 
 const CarouselInner = styled.div<{ offset: number }>`

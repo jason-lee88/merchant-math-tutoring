@@ -17,10 +17,20 @@ const Variables = css`
     --navbar-height: 120px;
     --navbar-expanded-height: 240px;
     --card-width: 300px;
-    --carousel-height: 500px;
-    --carousel-width: 900px;
+    --carousel-width: 300px;
+    --carousel-height: 1000px;
     --font-sans: "Inter", sans-serif;
     --font-serif: "Roboto Slab", "serif";
+
+    @media screen and (min-width: 768px) {
+      --carousel-width: 600px;
+      --carousel-height: 600px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      --carousel-width: 900px;
+      --carousel-heigh: 500px;
+    }
   }
 `;
 

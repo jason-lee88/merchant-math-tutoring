@@ -8,10 +8,14 @@ const StyledSection = styled.section`
 
   .subjects-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
     width: 100%;
+
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+    }
   }
 
   li {
@@ -23,7 +27,7 @@ const StyledSection = styled.section`
   li > span {
     font-size: 22px;
     color: var(--black);
-    top: -3px;
+    top: -6px;
     left: -8px;
     z-index: -1;
   }

@@ -12,8 +12,15 @@ const StyledSection = styled.section`
 
   #pricing-cards {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 20px;
+    grid-row-gap: 20px;
+
+    @media screen and (min-width: 1600px) {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+    }
   }
 
   .cost-label {

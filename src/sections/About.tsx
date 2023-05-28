@@ -17,23 +17,24 @@ const StyledSection = styled.section`
 
   #about-intro {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
+
+    @media screen and (min-width: 1200px) {
+      align-items: flex-start;
+      flex-direction: row;
+    }
   }
 
   #sameer {
     border-radius: 10px;
     height: 400px;
+    width: 400px;
     margin-right: 20px;
+    margin-bottom: 20px;
     user-select: none;
     -webkit-user-drag: none;
-  }
-
-  .about-section {
-    display: flex;
-    flex-direction: column;
-    margin: 20px 0px;
   }
 `;
 

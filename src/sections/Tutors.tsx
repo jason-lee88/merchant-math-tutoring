@@ -16,10 +16,15 @@ const StyledSection = styled.section`
 
   .tutor-container {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     margin: 40px;
+
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+      align-items: flex-start;
+    }
   }
 
   h2 {
@@ -43,6 +48,7 @@ const TutorImage = styled.div<{
   min-height: 500px;
   min-width: 500px;
   margin-right: 20px;
+  margin-bottom: 20px;
   user-select: none;
   -webkit-user-drag: none;
 `;

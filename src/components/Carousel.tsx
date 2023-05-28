@@ -1,4 +1,11 @@
-import { ReactElement, Children, useState } from "react";
+import {
+  ReactElement,
+  Children,
+  useState,
+  useEffect,
+  useRef,
+  MutableRefObject,
+} from "react";
 import styled from "styled-components";
 import LeftArrow from "../assets/left-arrow.svg";
 import RightArrow from "../assets/right-arrow.svg";
@@ -101,6 +108,8 @@ interface CarouselProps {
 
 const Carousel = ({ children }: CarouselProps) => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [carouselWindowWidth, setCarouselWindowWidth] = useState(0);
+  const carouselWindow = useRef() as MutableRefObject<HTMLInputElement>;
 
   const updateIndex = (newIndex: number) => {
     if (newIndex < 0) {
@@ -112,10 +121,21 @@ const Carousel = ({ children }: CarouselProps) => {
     }
   };
 
+  const onResize = () => {
+    setCarouselWindowWidth(carouselWindow.current.offsetWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
+  }, []);
+
   return (
     <CarouselContainer>
-      <CarouselWindow>
-        <CarouselInner offset={activeIndex * 900}>{children}</CarouselInner>
+      <CarouselWindow ref={carouselWindow}>
+        <CarouselInner offset={activeIndex * carouselWindowWidth}>
+          {children}
+        </CarouselInner>
       </CarouselWindow>
       <Indicators>
         {Children.map(children, (child, index) => (

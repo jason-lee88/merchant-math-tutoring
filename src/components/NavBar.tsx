@@ -104,7 +104,7 @@ const StyledNav = styled.nav<{ open: boolean }>`
     }
   }
 
-  #navlinks {
+  .navlinks {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -192,37 +192,41 @@ const NavBar = () => {
   const [windowWidth, setWindowWidth] = useState(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  useEffect(() => {
+  const onScroll = () => {
     const navLogo = document.querySelector("#home-img");
     const navName = document.querySelector("#mmt-name");
-    const navLinks = document.querySelector("#navlinks");
+    const navLinks = document.querySelectorAll(".navlinks");
 
-    const onScroll = () => {
-      if (navLogo && navName && navLinks) {
-        if (window.scrollY > 20) {
-          navLogo.className = "scroll";
-          navName.className = "scroll";
-          navLinks.className = "scroll";
+    if (navLogo && navName && navLinks) {
+      if (window.scrollY > 20) {
+        navLogo.className = "scroll";
+        navName.className = "scroll";
+        navLinks.forEach(
+          (navLinkSet) => (navLinkSet.className = "navlinks scroll")
+        );
+      } else {
+        navLogo.className = "";
+        navName.className = "";
+        navLinks.forEach((navLinkSet) => (navLinkSet.className = "navlinks"));
+      }
+    }
+
+    Data.tabs.forEach((tab) => {
+      const section = document.querySelector(`#${tab.tabLink}`);
+      const navLink = document.querySelector(`#navlink-${tab.tabLink}`);
+      if (section && navLink) {
+        const dimensions = section.getBoundingClientRect();
+        if (dimensions.top <= 1 && dimensions.bottom > 1) {
+          navLink.className = "navlink active";
         } else {
-          navLogo.className = "";
-          navName.className = "";
-          navLinks.className = "";
+          navLink.className = "navlink";
         }
       }
+    });
+  };
 
-      Data.tabs.forEach((tab) => {
-        const section = document.querySelector(`#${tab.tabLink}`);
-        const navLink = document.querySelector(`#navlink-${tab.tabLink}`);
-        if (section && navLink) {
-          const dimensions = section.getBoundingClientRect();
-          if (dimensions.top <= 1 && dimensions.bottom > 1) {
-            navLink.className = "navlink active";
-          } else {
-            navLink.className = "navlink";
-          }
-        }
-      });
-    };
+  useEffect(() => {
+    onScroll();
 
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
@@ -246,7 +250,7 @@ const NavBar = () => {
       </a>
       <span id="mmt-name">Merchant Math Tutoring</span>
       {windowWidth >= 768 && (
-        <div id="navlinks">
+        <div className="navlinks">
           <ul>
             {Data.tabs.map((tab) => (
               <li key={tab.tabLink}>
@@ -270,7 +274,7 @@ const NavBar = () => {
         <button id="close-menu" onClick={() => setMobileMenuOpen(false)}>
           <img className="mobile-nav-icon" src={Close} />
         </button>
-        <div id="navlinks">
+        <div className="navlinks">
           <ul>
             {Data.tabs.map((tab) => (
               <li key={tab.tabLink}>

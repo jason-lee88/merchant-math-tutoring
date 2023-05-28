@@ -17,8 +17,8 @@ const Variables = css`
     --navbar-height: 120px;
     --navbar-expanded-height: 240px;
     --card-width: 300px;
-    --carousel-width: 500px;
-    --carousel-height: 600px;
+    --carousel-width: 300px;
+    --carousel-height: 900px;
     --font-sans: "Inter", sans-serif;
     --font-serif: "Roboto Slab", "serif";
 
@@ -29,7 +29,7 @@ const Variables = css`
 
     @media screen and (min-width: 1200px) {
       --carousel-width: 900px;
-      --carousel-heigh: 500px;
+      --carousel-height: 500px;
     }
   }
 `;

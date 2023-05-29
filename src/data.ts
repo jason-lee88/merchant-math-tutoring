@@ -150,6 +150,11 @@ const Data: Data = {
       subheading: "Calculus 2",
       body: "Knew the course material very well and all of the best tips, could not recommend more. The tutoring improved my test taking ability and grade drastically.",
     },
+    {
+      name: "Sophia",
+      subheading: "Calculus 1 Part 2",
+      body: "Knew the course material very well and all of the best tips, could not recommend more. The tutoring improved my test taking ability and grade drastically.",
+    },
   ],
   tutors: [
     {

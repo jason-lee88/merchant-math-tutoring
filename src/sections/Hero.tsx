@@ -91,7 +91,7 @@ const Hero = () => (
     <div id="hero-splash" />
     <div id="hero-content">
       <h1>Get Started Today</h1>
-      <h2>Mathematics, Electricity, & More</h2>
+      <h2>Mathematics, Engineering, & Sciences</h2>
       <h3>Greater Philadelphia Area</h3>
       <a href="#pricing">View Pricing</a>
     </div>

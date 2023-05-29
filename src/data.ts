@@ -153,7 +153,7 @@ const Data: Data = {
     {
       name: "Sophia",
       subheading: "Calculus 1 Part 2",
-      body: "Knew the course material very well and all of the best tips, could not recommend more. The tutoring improved my test taking ability and grade drastically.",
+      body: "Eric was super helpful and organized! He always came prepared with problems to review and focused on explaining problems I had trouble with.",
     },
   ],
   tutors: [

@@ -92,7 +92,7 @@ const Hero = () => (
     <div id="hero-content">
       <h1>Get Started Today</h1>
       <h2>Mathematics, Electricity, & More</h2>
-      <h3>Bucks County, PA</h3>
+      <h3>Greater Philadelphia Area</h3>
       <a href="#pricing">View Pricing</a>
     </div>
   </StyledSection>

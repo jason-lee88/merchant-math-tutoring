@@ -15,6 +15,10 @@ const CardContainer = styled.div`
     var(--light-orange),
     var(--dark-orange)
   );
+  transition: all 0.3s;
+  &:hover {
+    transform: scale(1.05);
+  }
 
   h2 {
     color: white;

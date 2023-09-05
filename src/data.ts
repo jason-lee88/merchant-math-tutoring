@@ -3,6 +3,10 @@ import MadelineBraun from "./assets/tutors/madeline-braun.png";
 import SophiaMartino from "./assets/tutors/sophia-martino.jpg";
 import NolanJetter from "./assets/tutors/nolan-jetter.jpg";
 import JoshuaHall from "./assets/tutors/joshua-hall.jpg";
+import SolomayaSchwab from "./assets/tutors/solomaya-schwab.jpg";
+import QuanHoang from "./assets/tutors/quan-hoang.jpg";
+import EthanFisherPerez from "./assets/tutors/ethan-fisher-perez.jpg";
+import AndersHeyniger from "./assets/tutors/anders-heyniger.png";
 
 interface Data {
   tabs: {
@@ -212,14 +216,66 @@ const Data: Data = {
         "Joshua tutors calculus 1, calculus 2, and calculus 3.",
       ],
     },
+    {
+      name: "Solomaya Schwab",
+      imagePath: SolomayaSchwab,
+      imagePosition: [70, 70],
+      imagePositionMobile: [60, 60],
+      imageScaling: 600,
+      imageScalingMobile: 400,
+      bio: [
+        "I'm Solomaya Schwab! I am a lab technician at Lehigh and I graduated from Cedar Crest College in 2022 with a Bachelor's degree in Mathematics. I have a real passion for math and science and I love teaching, which I discovered while tutoring for the Community College of Philadelphia for 3 years. When I tutor, I try to offer alternative ways of thinking about a concept in order to find an explanation that makes sense to a particular student. I also try to impart good study habits as well as mathematical maturity and rigor. When I'm not at work, you can find me on the rugby pitch playing for the Lehigh Valley Lady Hooligans, working on an arts and crafts project, taking a walk, or sound asleep in the apartment I share with my girlfriend and two pigeons.",
+        "Solomaya tutors calculus 1, calculus 2, linear algebra, differential equations, and discrete mathematics.",
+      ],
+    },
+    {
+      name: "Quan Hoang",
+      imagePath: QuanHoang,
+      imagePosition: [100, 70],
+      imagePositionMobile: [70, 50],
+      imageScaling: 600,
+      imageScalingMobile: 400,
+      bio: [
+        "Hello! My name is Quan Hoang and I am currently a third-year student majoring in both Chemical Engineering and Biochemistry. I am involved in many of the musical ensembles here at Lehigh, as well as many STEM related organizations. In the past, I have worked as a Chemistry tutor at Lehigh, and I hope to continue tutoring students with Merchant. I understand that it could be frustrating and difficult to seek assistance in classes, and I hope that I could be a resource to help those students who need it!",
+        "Quan tutors chemistry, material balances, fluid mechanics, thermodynamics, methods, pchem, and reactor design.",
+      ],
+    },
+    {
+      name: "Ethan Fisher-Perez",
+      imagePath: EthanFisherPerez,
+      imagePosition: [70, 30],
+      imagePositionMobile: [60, 20],
+      imageScaling: 600,
+      imageScalingMobile: 400,
+      bio: [
+        "My name is Ethan Fisher-Perez. I’m a Lehigh senior studying Behavioral Neuroscience and Sociology. I’ve been doing research as a member of the Miwa Lab since my first year, where we study proteins involved in neuroplasticity. I’m scientifically most interested in learning, mood disorders, and smell.  I’m a writer, and I spent 5 semesters as a member of the Brown & White, where I was an editor, reported for the Health and Science beat, and wrote a column (mostly) about neuroscience called Gray Matters. I hope to soon publish the first issue of an online magazine that publishes psychological pieces of writing called Above Cognition.",
+        "I’m from a rural town an hour north of Bethlehem called Kunkletown. It is there I discovered my interest in lifting as well as coffee brewing and cupping. I love all kinds of art, but I am particularly devoted to the Renaissance and French impressionism. I love  reading, thinking, and handwriting—now that I think about it, most probably in that order.",
+        "Ethan tutors biology, physics 1, and physics 2.",
+      ],
+    },
+    {
+      name: "Anders Heyniger",
+      imagePath: AndersHeyniger,
+      imagePosition: [40, 100],
+      imagePositionMobile: [50, 70],
+      imageScaling: 600,
+      imageScalingMobile: 400,
+      bio: [
+        "What’s up! I’m Anders, a Computer Science student at Lehigh University’s P.C. Rossin School of Engineering and Applied Sciences. I love playing video games, watching shows and movies, and just really anything to do with computers. I also love to play and learn about music! I first realized my love of coding in 10th grade when I took my first computer science class and just couldn’t stop learning about it, and as a result I often ended up helping friends and those around me who were struggling with coding. I’ve been practically teaching coding to people frequently ever since then, and over time I’ve realized how much I enjoy helping people learn it too! I always strive to find what others might not understand about it (as computer science can be daunting, I know) and I hope to use the ways I’ve learned to approach programming to help other people be able to understand it and see it in a much easier and more interesting light!",
+        "Anders tutors computer science.",
+      ],
+    },
   ],
   subjects: {
-    CHEM: ["030"],
-    MATH: ["051", "081", "021", "022", "023", "205"],
-    PHY: ["011"],
-    CHE: ["031", "044", "201", "210", "211", "212"],
+    BIOS: ["045", "115"],
+    CHE: ["031", "044", "210", "211", "212"],
+    CHEM: ["030", "031", "110"],
+    CSE: ["002", "017"],
+    ECE: ["033", "081"],
+    MATH: ["021", "022", "023", "051", "052", "081", "205"],
+    ME: ["017", "104", "231", "245"],
     MECH: ["003", "012", "102"],
-    ECE: ["081/083", "108", "123"],
+    PHY: ["011"],
   },
 };
 

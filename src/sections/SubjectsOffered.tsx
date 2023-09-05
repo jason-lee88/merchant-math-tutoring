@@ -36,7 +36,7 @@ const StyledSection = styled.section`
 const SubjectsOffered = () => (
   <StyledSection id="subjects">
     <h1>Subjects Offered</h1>
-    <h2>Lehigh Tutoring Subjects Offered Spring 2023</h2>
+    <h2>Lehigh Tutoring Subjects Offered Fall 2023</h2>
     <div className="subjects-container">
       {Object.keys(Data.subjects).map((subject) => (
         <ul key={subject}>

@@ -10,7 +10,7 @@ const StudyGuides = () => (
   <StyledSection id="guides">
     <h1>Study Guides</h1>
     <p>
-      I am currently making study guides for the subjects I am tutoring. This
+      I am constantly making and updating study guides for the subjects I am tutoring. This
       allows me to be a more effective tutor, and also serves as a supplement
       for students. I believe that the best way to do well on math exams is
       understanding the process of solving various types of problems, which in

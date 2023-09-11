@@ -7,6 +7,7 @@ import SolomayaSchwab from "./assets/tutors/solomaya-schwab.jpg";
 import QuanHoang from "./assets/tutors/quan-hoang.jpg";
 import EthanFisherPerez from "./assets/tutors/ethan-fisher-perez.jpg";
 import AndersHeyniger from "./assets/tutors/anders-heyniger.png";
+import MeganFreid from "./assets/tutors/megan-freid.png";
 
 interface Data {
   tabs: {
@@ -270,6 +271,18 @@ const Data: Data = {
         "Anders tutors computer science.",
       ],
     },
+    {
+      name: "Megan Freid",
+      imagePath: MeganFreid,
+      imagePosition: [40, 100],
+      imagePositionMobile: [50, 70],
+      imageScaling: 600,
+      imageScalingMobile: 400,
+      bio: [
+        "Hi, my name is Megan Freid and I am a junior studying Mechanical Engineering with a minor in Business and Aerospace Engineering at Lehigh University.  Outside of class, I am part of the Formula One SAE team, where we design and build a Formula One car every year at a competition up in Michigan. It’s here where I learned a lot of fun skills including how to weld.  Additionally, I am a member of the Society of Women Engineers and the Tau Beta Pi Engineering Honors Society.  Besides school and educational groups, I enjoy running, reading, and baking.  I grew up helping my sister with math and other courses and I understand that different people have different learning styles and that it is beneficial to teach things in different ways. I look forward to using my tutoring skills to help others in my community.",
+        "Megan tutors statics, dynamics, strength of materials, thermodynamics, and other mechanical engineering subjects."
+      ],
+    }
   ],
   subjects: {
     BIOS: ["045", "115"],

@@ -274,7 +274,7 @@ const Data: Data = {
     {
       name: "Megan Freid",
       imagePath: MeganFreid,
-      imagePosition: [40, 100],
+      imagePosition: [40, 120],
       imagePositionMobile: [50, 80],
       imageScaling: 600,
       imageScalingMobile: 400,
@@ -286,12 +286,13 @@ const Data: Data = {
     {
       name: "Arianna Morataya",
       imagePath: AriannaMorataya,
-      imagePosition: [40, 100],
+      imagePosition: [40, 70],
       imagePositionMobile: [50, 30],
       imageScaling: 600,
       imageScalingMobile: 400,
       bio: [
-        "My name is Arianna Morataya and I am a third year Accounting student with a Minor in Spanish. I am also pursuing an Undergraduate International Business Certificate through the College of Business that would accompany my B.S degree. I am from New Jersey but went to boarding school in New Hampshire so I have experienced all types of places. I am in several clubs at Lehigh that include Women of Color Alliance, Lehigh Minorities in Business Alliance, and Women in Business! I also work for the America Reads/Counts Organization that sponsors after-school homework programs for elementary students in the Bethlehem area. As a new tutor, I look forward to assisting students in their accounting courses and helping them succeed overall! "
+        "My name is Arianna Morataya and I am a third year Accounting student with a Minor in Spanish. I am also pursuing an Undergraduate International Business Certificate through the College of Business that would accompany my B.S degree. I am from New Jersey but went to boarding school in New Hampshire so I have experienced all types of places. I am in several clubs at Lehigh that include Women of Color Alliance, Lehigh Minorities in Business Alliance, and Women in Business! I also work for the America Reads/Counts Organization that sponsors after-school homework programs for elementary students in the Bethlehem area. As a new tutor, I look forward to assisting students in their accounting courses and helping them succeed overall! ",
+        "Arianna tutors finance and accounting."
       ],
     }
   ],

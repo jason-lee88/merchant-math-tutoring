@@ -275,7 +275,7 @@ const Data: Data = {
       name: "Megan Freid",
       imagePath: MeganFreid,
       imagePosition: [40, 70],
-      imagePositionMobile: [50, 80],
+      imagePositionMobile: [50, 60],
       imageScaling: 600,
       imageScalingMobile: 400,
       bio: [
@@ -287,7 +287,7 @@ const Data: Data = {
       name: "Arianna Morataya",
       imagePath: AriannaMorataya,
       imagePosition: [40, 200],
-      imagePositionMobile: [50, 30],
+      imagePositionMobile: [50, 150],
       imageScaling: 600,
       imageScalingMobile: 400,
       bio: [

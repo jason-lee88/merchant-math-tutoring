@@ -286,7 +286,7 @@ const Data: Data = {
     {
       name: "Arianna Morataya",
       imagePath: AriannaMorataya,
-      imagePosition: [40, 120],
+      imagePosition: [40, 150],
       imagePositionMobile: [50, 30],
       imageScaling: 600,
       imageScalingMobile: 400,

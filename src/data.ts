@@ -233,11 +233,7 @@ const Data: Data = {
       imageScaling: 600,
       imageScalingMobile: 400,
       bio: [
-        "My name is Emma Anderson and am a senior at Lehigh University earning a degree in",
-        "Bioengineering with a focus in Pharmaceuticals and a minor in Economics. I am the academic",
-        "chair in my sorority and enjoy helping other students succeed academically. I am thrilled to be",
-        "able to help even more students in their academics. In my free time I love to bake gluten free",
-        "treats, enjoy going to the gym, and rollerblading.",
+        "My name is Emma Anderson and am a senior at Lehigh University earning a degree in bioengineering with a focus in Pharmaceuticals and a minor in Economics. I am the academic chair in my sorority and enjoy helping other students succeed academically. I am thrilled to be able to help even more students in their academics. In my free time I love to bake gluten free treats, enjoy going to the gym, and rollerblading."
       ],
     },
     {

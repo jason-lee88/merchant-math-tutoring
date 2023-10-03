@@ -3,7 +3,6 @@ import MadelineBraun from "./assets/tutors/madeline-braun.png";
 import SophiaMartino from "./assets/tutors/sophia-martino.jpg";
 import NolanJetter from "./assets/tutors/nolan-jetter.jpg";
 import JoshuaHall from "./assets/tutors/joshua-hall.jpg";
-import SolomayaSchwab from "./assets/tutors/solomaya-schwab.jpg";
 import QuanHoang from "./assets/tutors/quan-hoang.jpg";
 import EthanFisherPerez from "./assets/tutors/ethan-fisher-perez.jpg";
 import AndersHeyniger from "./assets/tutors/anders-heyniger.png";

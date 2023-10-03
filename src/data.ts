@@ -9,6 +9,10 @@ import EthanFisherPerez from "./assets/tutors/ethan-fisher-perez.jpg";
 import AndersHeyniger from "./assets/tutors/anders-heyniger.png";
 import MeganFreid from "./assets/tutors/megan-freid.png";
 import AriannaMorataya from "./assets/tutors/arianna-morataya.jpg";
+import EmmaAnderson from "./assets/tutors/emma-anderson.jpg";
+import JacobBlair from "./assets/tutors/jacob-blair.jpg";
+
+
 interface Data {
   tabs: {
     tabName: string;
@@ -223,15 +227,18 @@ const Data: Data = {
       ],
     },
     {
-      name: "Solomaya Schwab",
-      imagePath: SolomayaSchwab,
+      name: "Emma Anderson",
+      imagePath: EmmaAnderson,
       imagePosition: [70, 70],
       imagePositionMobile: [60, 60],
       imageScaling: 600,
       imageScalingMobile: 400,
       bio: [
-        "I'm Solomaya Schwab! I am a lab technician at Lehigh and I graduated from Cedar Crest College in 2022 with a Bachelor's degree in Mathematics. I have a real passion for math and science and I love teaching, which I discovered while tutoring for the Community College of Philadelphia for 3 years. When I tutor, I try to offer alternative ways of thinking about a concept in order to find an explanation that makes sense to a particular student. I also try to impart good study habits as well as mathematical maturity and rigor. When I'm not at work, you can find me on the rugby pitch playing for the Lehigh Valley Lady Hooligans, working on an arts and crafts project, taking a walk, or sound asleep in the apartment I share with my girlfriend and two pigeons.",
-        "Solomaya tutors calculus 1, calculus 2, linear algebra, differential equations, and discrete mathematics.",
+        "My name is Emma Anderson and am a senior at Lehigh University earning a degree in",
+        "Bioengineering with a focus in Pharmaceuticals and a minor in Economics. I am the academic",
+        "chair in my sorority and enjoy helping other students succeed academically. I am thrilled to be",
+        "able to help even more students in their academics. In my free time I love to bake gluten free",
+        "treats, enjoy going to the gym, and rollerblading.",
       ],
     },
     {
@@ -294,7 +301,19 @@ const Data: Data = {
         "My name is Arianna Morataya and I am a third year Accounting student with a Minor in Spanish. I am also pursuing an Undergraduate International Business Certificate through the College of Business that would accompany my B.S degree. I am from New Jersey but went to boarding school in New Hampshire so I have experienced all types of places. I am in several clubs at Lehigh that include Women of Color Alliance, Lehigh Minorities in Business Alliance, and Women in Business! I also work for the America Reads/Counts Organization that sponsors after-school homework programs for elementary students in the Bethlehem area. As a new tutor, I look forward to assisting students in their accounting courses and helping them succeed overall! ",
         "Arianna tutors finance and accounting."
       ],
-    }
+    },
+    {
+      name: "Jacob Blair",
+      imagePath: JacobBlair,
+      imagePosition: [70, 70],
+      imagePositionMobile: [60, 60],
+      imageScaling: 600,
+      imageScalingMobile: 400,
+      bio: [
+        "My name is Jacob Blair (but most people just call me Blair)! I am a triple degree Junior in Math, Physics, and Electrical Engineering. On campus I have found great interest in physics research on Quark Gluon Plasma, where I have spent time building scintillators (photon detectors) for a particle accelerator. Additionally, I have worked with Professor Daniel Ou-Yang in Biophotonics research. I am the President of Lehigh’s Math Society as well as a Tour Guide and an Orientation Leader. I love interacting with people, and am always open to conversation! I’m from a small town in the middle of nowhere (Woolwich, NJ), and being from the middle of nowhere I have had plenty of time to develop my interests and acquire a taste for natural sciences! I am fundamentally fascinated by the universe and love to share my passion with anyone willing to listen",
+        
+      ],
+    },
   ],
   subjects: {
     BIOS: ["045", "115"],
@@ -306,7 +325,8 @@ const Data: Data = {
     ME: ["017", "104", "231", "245"],
     MECH: ["003", "012", "102"],
     PHY: ["011"],
-    ACCT: ["151", "152"]
+    ACCT: ["151", "152"],
+    ECO: ["001"]
   },
 };
 

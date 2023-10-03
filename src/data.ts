@@ -233,7 +233,8 @@ const Data: Data = {
       imageScaling: 600,
       imageScalingMobile: 400,
       bio: [
-        "My name is Emma Anderson and am a senior at Lehigh University earning a degree in bioengineering with a focus in Pharmaceuticals and a minor in Economics. I am the academic chair in my sorority and enjoy helping other students succeed academically. I am thrilled to be able to help even more students in their academics. In my free time I love to bake gluten free treats, enjoy going to the gym, and rollerblading."
+        "My name is Emma Anderson and am a senior at Lehigh University earning a degree in bioengineering with a focus in Pharmaceuticals and a minor in Economics. I am the academic chair in my sorority and enjoy helping other students succeed academically. I am thrilled to be able to help even more students in their academics. In my free time I love to bake gluten free treats, enjoy going to the gym, and rollerblading.",
+        "Emma tutors Economics and Calulus 1."
       ],
     },
     {
@@ -306,6 +307,7 @@ const Data: Data = {
       imageScalingMobile: 400,
       bio: [
         "My name is Jacob Blair (but most people just call me Blair)! I am a triple degree Junior in Math, Physics, and Electrical Engineering. On campus I have found great interest in physics research on Quark Gluon Plasma, where I have spent time building scintillators (photon detectors) for a particle accelerator. Additionally, I have worked with Professor Daniel Ou-Yang in Biophotonics research. I am the President of Lehigh’s Math Society as well as a Tour Guide and an Orientation Leader. I love interacting with people, and am always open to conversation! I’m from a small town in the middle of nowhere (Woolwich, NJ), and being from the middle of nowhere I have had plenty of time to develop my interests and acquire a taste for natural sciences! I am fundamentally fascinated by the universe and love to share my passion with anyone willing to listen",
+        "Jacob tutors electrical engineering, calculus, linear algebra, differential equations, and physics."
         
       ],
     },

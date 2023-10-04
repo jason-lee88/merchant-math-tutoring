@@ -234,7 +234,7 @@ const Data: Data = {
       imageScalingMobile: 400,
       bio: [
         "My name is Emma Anderson and am a senior at Lehigh University earning a degree in bioengineering with a focus in Pharmaceuticals and a minor in Economics. I am the academic chair in my sorority and enjoy helping other students succeed academically. I am thrilled to be able to help even more students in their academics. In my free time I love to bake gluten free treats, enjoy going to the gym, and rollerblading.",
-        "Emma tutors Economics and Calulus 1."
+        "Emma tutors Economics and Calculus 1."
       ],
     },
     {

@@ -298,19 +298,7 @@ const Data: Data = {
         "Arianna tutors finance and accounting."
       ],
     },
-    {
-      name: "Jacob Blair",
-      imagePath: JacobBlair,
-      imagePosition: [70, 70],
-      imagePositionMobile: [60, 60],
-      imageScaling: 600,
-      imageScalingMobile: 400,
-      bio: [
-        "My name is Jacob Blair (but most people just call me Blair)! I am a triple degree Junior in Math, Physics, and Electrical Engineering. On campus I have found great interest in physics research on Quark Gluon Plasma, where I have spent time building scintillators (photon detectors) for a particle accelerator. Additionally, I have worked with Professor Daniel Ou-Yang in Biophotonics research. I am the President of Lehigh’s Math Society as well as a Tour Guide and an Orientation Leader. I love interacting with people, and am always open to conversation! I’m from a small town in the middle of nowhere (Woolwich, NJ), and being from the middle of nowhere I have had plenty of time to develop my interests and acquire a taste for natural sciences! I am fundamentally fascinated by the universe and love to share my passion with anyone willing to listen",
-        "Jacob tutors electrical engineering, calculus, linear algebra, differential equations, and physics."
-        
-      ],
-    },
+    
   ],
   subjects: {
     BIOS: ["045", "115"],

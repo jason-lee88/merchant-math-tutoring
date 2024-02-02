@@ -9,7 +9,6 @@ import AndersHeyniger from "./assets/tutors/anders-heyniger.png";
 import MeganFreid from "./assets/tutors/megan-freid.png";
 import AriannaMorataya from "./assets/tutors/arianna-morataya.jpg";
 import EmmaAnderson from "./assets/tutors/emma-anderson.jpg";
-import JacobBlair from "./assets/tutors/jacob-blair.jpg";
 
 
 interface Data {

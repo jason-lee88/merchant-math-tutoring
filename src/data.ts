@@ -305,7 +305,8 @@ const Data: Data = {
       imageScaling: 600,
       imageScalingMobile: 400,
       bio: [
-        "My name is Luke Rekucki, and I am going into my final semester at Lehigh. I am majoring in Mechanical Engineering, and will be receiving both a business and engineering degree through the Integrated Business and Engineering program. I was born and raised in northern New Jersey, where I am currently interning at Becton Dickinson as an R&D engineer in new product development. Outside of school, I love to play video games and watch movies on a rainy day, and take advantage of the sunshine by getting active with hikes or playing sports with friends. My favorite part of tutoring is learning from my students, especially about how great their exam grades are!"
+        "My name is Luke Rekucki, and I am going into my final semester at Lehigh. I am majoring in Mechanical Engineering, and will be receiving both a business and engineering degree through the Integrated Business and Engineering program. I was born and raised in northern New Jersey, where I am currently interning at Becton Dickinson as an R&D engineer in new product development. Outside of school, I love to play video games and watch movies on a rainy day, and take advantage of the sunshine by getting active with hikes or playing sports with friends. My favorite part of tutoring is learning from my students, especially about how great their exam grades are!",
+        "Luke tutors Mechanical engineering subjects and Statistics."
       ],
     },
   ],

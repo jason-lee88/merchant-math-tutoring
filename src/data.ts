@@ -300,8 +300,8 @@ const Data: Data = {
     {
       name: "Luke Rekucki",
       imagePath: LukeRekucki,
-      imagePosition: [40, 150],
-      imagePositionMobile: [50, 100],
+      imagePosition: [40, 100],
+      imagePositionMobile: [50, 50],
       imageScaling: 600,
       imageScalingMobile: 400,
       bio: [

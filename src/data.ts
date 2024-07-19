@@ -9,7 +9,7 @@ import AndersHeyniger from "./assets/tutors/anders-heyniger.png";
 import MeganFreid from "./assets/tutors/megan-freid.png";
 import AriannaMorataya from "./assets/tutors/arianna-morataya.jpg";
 import EmmaAnderson from "./assets/tutors/emma-anderson.jpg";
-
+import LukeRekucki from "./assets/tutors/luke-rekucki.jpg";
 
 interface Data {
   tabs: {
@@ -297,7 +297,22 @@ const Data: Data = {
         "Arianna tutors finance and accounting."
       ],
     },
-    
+    {
+      name: "Luke Rekucki",
+      imagePath: LukeRekucki,
+      imagePosition: [40, 200],
+      imagePositionMobile: [50, 150],
+      imageScaling: 600,
+      imageScalingMobile: 400,
+      bio: [
+        "My name is Luke Rekucki, and I am going into my final semester at Lehigh. I am majoring in Mechanical Engineering,", 
+        "and will be receiving both a business and engineering degree through the Integrated Business and Engineering program.", 
+        "I was born and raised in northern New Jersey, where I am currently interning at Becton Dickinson as an R&D engineer in", 
+        "new product development. Outside of school, I love to play video games and watch movies on a rainy day, and take",
+        "advantage of the sunshine by getting active with hikes or playing sports with friends. My favorite part of tutoring is", 
+        "learning from my students, especially about how great their exam grades are!"
+      ],
+    },
   ],
   subjects: {
     BIOS: ["045", "115"],

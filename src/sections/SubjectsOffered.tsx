@@ -38,15 +38,13 @@ const SubjectsOffered = () => (
     <h1>Subjects Offered</h1>
     <h2>Tutoring Subjects Offered</h2>
     <div className="subjects-container">
-      {Object.keys(Data.subjects).map((subject) => (
-        <ul key={subject}>
-          {Data.subjects[subject].map((course) => (
-            <li key={`${subject}${course}`}>
-              <span>{`${subject} ${course}`}</span>
-            </li>
-          ))}
-        </ul>
+    <ul>
+      {Data.subjects.map((subject, index) => (
+        <li key={index}>
+          <span>{subject}</span>
+        </li>
       ))}
+    </ul>
     </div>
     <span>
       NOTE: This is a partial listing of subjects offered. If there is any

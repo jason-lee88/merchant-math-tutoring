@@ -49,6 +49,7 @@ const StyledSection = styled.section`
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 80px;
+    text-align: center;
     @media screen and (min-width: 1000px) {
       font-size: 60px;
     }

@@ -38,9 +38,7 @@ interface Data {
     imageScalingMobile: number;
     bio: string[];
   }[];
-  subjects: {
-    [key: string]: string[];
-  };
+  subjects: string[];
 }
 
 const Data: Data = {
@@ -311,19 +309,7 @@ const Data: Data = {
       ],
     },
   ],
-  subjects: {
-    BIOS: ["045", "115"],
-    CHE: ["031", "044", "210", "211", "212"],
-    CHEM: ["030", "031", "110"],
-    CSE: ["002", "017"],
-    ECE: ["033", "081"],
-    MATH: ["021", "022", "023", "051", "052", "081", "205"],
-    ME: ["017", "104", "231", "245"],
-    MECH: ["003", "012", "102"],
-    PHY: ["011"],
-    ACCT: ["151", "152"],
-    ECO: ["001"]
-  },
+  subjects: ["Engineering", "Calculus", "Statistics", "Algebra", "Geometry", "Biology", "Chemistry", "Physics", "Accounting", "Economics", "Computer Science"],
 };
 
 export default Data;

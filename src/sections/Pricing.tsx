@@ -89,7 +89,7 @@ const Pricing = () => {
             </Card>
           ))}
         </div>
-        <p>NOTE: Group rates are for each student.</p>
+        <p>NOTE: Group rates are for each student. My personal rate is $75/hour and cannot be used with any packages</p>
         <h2 className="info">
           We have tutors who can teach a wide variety of STEM topics, including
           but not limited to topics in Mathematics, Physics, and Mechanics. View

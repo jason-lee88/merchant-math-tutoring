@@ -109,11 +109,11 @@ const Data: Data = {
     },
     {
       label: "Group (3 Students)",
-      cost: 60,
+      cost: 70,
     },
     {
       label: "Group (4 Students)",
-      cost: 55,
+      cost: 60,
     },
   ],
   testimonials: [

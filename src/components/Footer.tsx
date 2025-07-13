@@ -40,7 +40,7 @@ const Footer = () => (
     </a>
     <span className="credit">
       Website Designed & Built by{" "}
-      <a target="_blank" href="https://jasonedwardlee.com">
+      <a target="_blank" href="https://jsnlee.com">
         Jason Lee
       </a>
     </span>

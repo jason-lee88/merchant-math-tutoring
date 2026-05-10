@@ -101,19 +101,19 @@ const Data: Data = {
   pricing: [
     {
       label: "Individual",
-      cost: 80,
+      cost: 100,
     },
     {
       label: "Group (2 Students)",
-      cost: 60,
+      cost: 80,
     },
     {
       label: "Group (3 Students)",
-      cost: 50,
+      cost: 70,
     },
     {
       label: "Group (4 Students)",
-      cost: 45,
+      cost: 65,
     },
   ],
   testimonials: [
